@@ -56,6 +56,9 @@ const Game = ({ score, myChoice, setScore }) => {
         {playerWin === "win" && <p>You win!</p>}
         {playerWin === "lose" && <p>You lose!</p>}
         {playerWin === "draw" && <p>Draw!</p>}
+        <Link to="/" className="play-again" onClick={() => setHouse()}>
+            Play Again
+        </Link>
         </div>
     );
     };
