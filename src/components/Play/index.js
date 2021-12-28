@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Modal = () => {
+const Play = () => {
     return (
         <div>
-        <h1>Modal</h1>
+        <h1>Play</h1>
         </div>
     )
     }
 
-export default Modal
+export default Play
