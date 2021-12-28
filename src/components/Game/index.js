@@ -43,6 +43,11 @@ const Game = ({ score, myChoice, setScore }) => {
         }
       };
 
+      useEffect(() => {
+        Result();  
+            }, [house]);
+
+
     return (
         <div className="game">
         my choice: {myChoice} <br/>
