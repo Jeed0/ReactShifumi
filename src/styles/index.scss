@@ -1,8 +1,20 @@
 @use 'reset';
 @use 'vars';
 
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
 body {
   font-family: sans-serif;
+  color: #fff;
+  background: vars.$background-gradient;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 /* 
