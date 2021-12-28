@@ -1,11 +1,47 @@
+// imports
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Play = () => {
+// == Style
+import './styles.scss';
+
+// images
+import Triangle from "src/assets/images/bg-triangle.svg";
+
+const Play = ( {setMyChoice} ) => {
+
+    const setChoice=(e)=>{ 
+    setMyChoice(e.target.dataset.id)
+    };
+
     return (
-        <div>
-        <h1>Play</h1>
+    <div className="play">
+            <img src={Triangle} alt="" className="triangle" />
+        <div className="items">
+            <Link to="/game">
+                <div
+                    data-id="paper"
+                    onClick={setChoice}
+                    className="icon icon--paper"
+                ></div>
+            </Link>
+            <Link to="/game">
+                <div
+                    data-id="scissors"
+                    onClick={setChoice}
+                    className="icon icon--scissors"
+                ></div>
+            </Link>
+            <Link to="/game">
+                <div
+                    data-id="rock"
+                    onClick={setChoice}
+                    className="icon icon--rock"
+                ></div>
+            </Link>
         </div>
-    )
-    }
+    </div>
+  );
+};
 
-export default Play
+export default Play;
