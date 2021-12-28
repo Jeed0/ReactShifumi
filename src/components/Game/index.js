@@ -1,11 +1,30 @@
-import React from 'react'
+// == imports
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
-const Game = () => {
+// == Style
+import './styles.scss';
+
+const Game = ({ score, myChoice, setScore }) => {
+    
+    const [house, setHouse] = useState("");
+    const [playerWin, setPlayerWin] = useState("");
+
+    const newHousePick = () => {
+        const choices = ["rock", "paper", "scissors"];
+        setHouse(choices[Math.floor(Math.random() * 3)]);
+      };
+
+      useEffect(() => {
+        newHousePick();
+      }, []);
+    
     return (
-        <div>
-        <h1>Game</h1>
+        <div className="game">
+        my choice: {myChoice} <br/>
+        house choice: {house} <br/>
         </div>
-    )
-    }
+    );
+    };
 
-export default Game
+export default Game;
