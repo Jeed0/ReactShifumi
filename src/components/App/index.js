@@ -1,37 +1,40 @@
 // == Import
-import React from 'react';
+import React, {useState} from 'react';
 import { Switch, Route} from "react-router-dom";
 
 // == Components
 import Header from 'src/components/Header';
 import Play from 'src/components/Play';
 import Game from 'src/components/Game';
-//import Modal from 'src/components/Modal';
 import Footer from 'src/components/Footer';
 
 // == Style
 import './styles.scss';
 
 
-// == Composant
-const App = () => (
+
+function App() {
+
+  const [myChoice, setMyChoice] = useState("");
+  const [score, setScore] = useState(0);
+
+
+  return (
   <>
-  <div className="container">
-    <Header />
+    <div className="container">
+    <Header score={score} />
       <Switch>
         <Route exact path="/">
-          <Play />
+          <Play setMyChoice={setMyChoice} />
         </Route>
         <Route exact path="/game">
-          <Game />
+          <Game myChoice={myChoice} score={score} setScore={setScore} />
         </Route>
       </Switch>
-    
     </div>
     <Footer />
-  
   </>
 );
+}
 
-// == Export
 export default App;
