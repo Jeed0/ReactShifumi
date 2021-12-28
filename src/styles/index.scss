@@ -1,5 +1,9 @@
+
 @use 'reset';
 @use 'vars';
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
 
 
 *, *::before, *::after {
@@ -10,15 +14,15 @@
 
 
 body {
-  font-family: sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   color: #fff;
   background: vars.$background-gradient;
   text-align: center;
   box-sizing: border-box;
-  font-size: 2.5rem;
 }
 
-a {
-  color: #fff;
-  text-decoration: none;
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
