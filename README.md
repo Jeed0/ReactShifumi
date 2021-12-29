@@ -1,15 +1,15 @@
 # ReactShifumi
 
-##une fois pour toute :
+## une fois pour toute :
 
-###npm install -g yo generator-oclock-react  
+### npm install -g yo generator-oclock-react  
 
 
-##dans le dossier :
+## dans le dossier :
 
-###yo oclock-react  
-###yarn add react-router-dom@^5.3.0  
+### yo oclock-react  
+### yarn add react-router-dom@^5.3.0  
 
-##Pour lancer sur le serveur 8080  
+## Pour lancer sur le serveur 8080  
 
-###yarn start  
+### `yarn start ` 
