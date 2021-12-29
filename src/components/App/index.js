@@ -20,21 +20,21 @@ function App() {
 
 
   return (
-  <>
-    <div className="container">
-    <Header score={score} />
-      <Switch>
-        <Route exact path="/">
-          <Play setMyChoice={setMyChoice} />
-        </Route>
-        <Route exact path="/game">
-          <Game myChoice={myChoice} score={score} setScore={setScore} />
-        </Route>
-      </Switch>
-    </div>
-    <Footer />
-  </>
-);
+    <>
+      <div className="container">
+        <Header score={score} />
+        <Switch>
+          <Route exact path="/">
+            <Play setMyChoice={setMyChoice} />
+          </Route>
+          <Route path="/game">
+            <Game myChoice={myChoice} score={score} setScore={setScore} />
+          </Route>
+        </Switch>
+      </div>
+      <Footer />
+    </>
+  );
 }
 
 export default App;
