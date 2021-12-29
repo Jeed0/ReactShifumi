@@ -18,7 +18,10 @@ return (
     <>
       <footer className="footer">
         <div className="attribution">
-          Challenge by Frontend Mentor
+        Challenge by{" "}
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          Frontend Mentor
+        </a>
           . Coded by <a href="#">Jee DO</a>
         </div>
         <button className="rules" onClick={toggle}>
