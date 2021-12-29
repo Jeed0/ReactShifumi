@@ -10,6 +10,6 @@
 ### `yo oclock-react`  
 ### `yarn add react-router-dom@^5.3.0`  
 
-## Pour lancer sur le serveur 8080  
+## Pour lancer sur le serveur local 8080  
 
 ### `yarn start` 
