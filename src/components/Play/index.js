@@ -23,21 +23,21 @@ const Play = ( {setMyChoice} ) => {
                     data-id="paper"
                     onClick={setChoice}
                     className="icon icon--paper"
-                >paper</div>
+                ></div>
             </Link>
             <Link to="/game">
                 <div
                     data-id="scissors"
                     onClick={setChoice}
                     className="icon icon--scissors"
-                >scissors</div>
+                ></div>
             </Link>
             <Link to="/game">
                 <div
                     data-id="rock"
                     onClick={setChoice}
                     className="icon icon--rock"
-                >rock</div>
+                ></div>
             </Link>
         </div>
     </div>

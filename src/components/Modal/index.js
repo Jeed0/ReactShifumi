@@ -1,11 +1,31 @@
-import React from 'react'
+// == Style
+import React from "react";
+import ReactDOM from "react-dom";
+import close from "src/assets/images/icon-close.svg";
+import rules from "src/assets/images/image-rules.svg";
 
-const Play = () => {
-    return (
-        <div>
-        <h1>PLay</h1>
+
+// == Style
+import './styles.scss';
+
+
+
+const Modal = ({ toggle }) => {
+    return ReactDOM.createPortal(
+      <div className="modal-container">
+        <div className="modal-box">
+          <div className="modal__header">
+            <h1>Rules</h1>
+            <button onClick={toggle}>
+              <img src={close} alt="Close" srcset="" />
+            </button>
+          </div>
+          <img src={rules} alt="Rules" srcset="" />
         </div>
-    )
-    }
-
-export default Play
+      </div>,
+      document.getElementById("modal")
+    );
+  };
+  
+  export default Modal;
+  
