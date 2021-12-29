@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import './styles.scss';
 
 // images
-import Triangle from "src/assets/images/bg-triangle.svg";
+import Triangle from "../../assets/images/bg-triangle.svg";
 
 const Play = ( {setMyChoice} ) => {
 

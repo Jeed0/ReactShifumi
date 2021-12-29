@@ -3,10 +3,10 @@ import React, {useState} from 'react';
 import { Switch, Route} from "react-router-dom";
 
 // == Components
-import Header from 'src/components/Header';
-import Play from 'src/components/Play';
-import Game from 'src/components/Game';
-import Footer from 'src/components/Footer';
+import Header from '../Header';
+import Play from '../Play';
+import Game from '../Game';
+import Footer from '../Footer';
 
 // == Style
 import './styles.scss';

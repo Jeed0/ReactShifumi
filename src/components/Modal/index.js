@@ -1,8 +1,8 @@
 // == Style
 import React from "react";
 import ReactDOM from "react-dom";
-import close from "src/assets/images/icon-close.svg";
-import rules from "src/assets/images/image-rules.svg";
+import close from "../../assets/images/icon-close.svg";
+import rules from "../../assets/images/image-rules.svg";
 
 
 // == Style

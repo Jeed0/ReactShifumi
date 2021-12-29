@@ -27,7 +27,7 @@
 
 
             &--paper{
-                @include icon(vars.$imageP,vars.$paper-gradient);
+                @include icon(vars.$imageP, vars.$paper-gradient);
 
                 &--winner{
                 @include bigShadow(vars.$paper-gradient);
